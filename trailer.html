@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAGERUSH - Trailers</title>
+  <meta name="description" content="Watch the official Ragerush game trailers in our 90s video player!">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="top-marquee">
+    <marquee behavior="scroll" direction="left" scrollamount="7">
+      <span class="marquee-star">&#9733;</span> TRAILER THEATER - GRAB SOME POPCORN! <span class="marquee-star">&#9733;</span>
+      *** <span class="blink">NOW PLAYING: CHROME RAGE '97</span> *** PLEASE TURN OFF YOUR CELL PHONES ***
+    </marquee>
+  </div>
+
+  <header class="site-header">
+    <h1 class="logo" style="font-size:clamp(52px,11vw,120px);">TRAILER</h1>
+    <div class="logo-sub">~ The Ragerush Theater ~ Now Showing ~</div>
+  </header>
+
+  <nav class="nav-bar">
+    <a href="index.html" class="nav-btn"><span class="icon">&#127968;</span>HOME</a>
+    <a href="download.html" class="nav-btn"><span class="icon">&#11015;</span>DOWNLOAD</a>
+    <a href="news.html" class="nav-btn"><span class="icon">&#128240;</span>NEWS</a>
+    <a href="trailer.html" class="nav-btn active"><span class="icon">&#127916;</span>TRAILER</a>
+  </nav>
+
+  <main class="content">
+
+    <!-- VIDEO PLAYER WINDOW -->
+    <section class="window">
+      <div class="window-titlebar">
+        <span>&#9619; WINDOWS MEDIA PLAYER - CHROME_RAGE_TRAILER.AVI</span>
+        <span class="controls"><span>_</span><span>&#9632;</span><span>X</span></span>
+      </div>
+      <div class="window-body">
+
+        <div class="video-player" id="video-player">
+          <div class="video-scene">
+            <div class="big-star">&#9733;</div>
+            <div class="scene-text">RAGERUSH PRESENTS...</div>
+          </div>
+          <div class="play-overlay">
+            <div class="play-button">&#9654;</div>
+          </div>
+        </div>
+
+        <div class="player-controls">
+          <button class="ctrl-btn" id="stop-btn">&#9209; STOP</button>
+          <span>&#9835; CHIPTUNE SOUNDTRACK</span>
+          <span class="time" id="video-time">00:00 / 00:45</span>
+        </div>
+
+        <p style="text-align:center;">
+          <span class="new-badge">NEW!</span>
+          <b>CHROME RAGE '97 - OFFICIAL TRAILER</b><br>
+          <span style="font-family:'Courier New',monospace;font-size:13px;color:#9a9ad0;">
+            RUN TIME: 00:45 | FORMAT: AVI | CODEC: CINEPAK | SIZE: 12.4 MB
+          </span>
+        </p>
+        <div class="construction" style="margin-top:4px;">
+          <span class="construction-gif">&#9888;</span> REQUIRES QUICKTIME 2.0 OR BETTER (not really - just click play!) <span class="construction-gif">&#9888;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- MORE TRAILERS -->
+    <section class="window">
+      <div class="window-titlebar">
+        <span>&#9619; MORE_VIDEOS/</span>
+        <span class="controls"><span>_</span><span>X</span></span>
+      </div>
+      <div class="window-body">
+        <h2 class="section-title">More Trailers!</h2>
+        <div class="trailer-thumbs">
+          <div class="thumb" onclick="document.getElementById('video-player').querySelector('.scene-text').textContent='CHROME RAGE - TEASER'; window.scrollTo({top:0,behavior:'smooth'});">
+            <div class="thumb-art">&#129302;</div>
+            <h4>Chrome Rage Teaser</h4>
+          </div>
+          <div class="thumb" onclick="document.getElementById('video-player').querySelector('.scene-text').textContent='RAGE BALL - GAMEPLAY'; window.scrollTo({top:0,behavior:'smooth'});">
+            <div class="thumb-art">&#128165;</div>
+            <h4>Rage Ball Gameplay</h4>
+          </div>
+          <div class="thumb" onclick="document.getElementById('video-player').querySelector('.scene-text').textContent='BEHIND THE SCENES'; window.scrollTo({top:0,behavior:'smooth'});">
+            <div class="thumb-art">&#127916;</div>
+            <h4>Behind the Scenes</h4>
+          </div>
+          <div class="thumb" onclick="document.getElementById('video-player').querySelector('.scene-text').textContent='STUDIO TOUR 1997'; window.scrollTo({top:0,behavior:'smooth'});">
+            <div class="thumb-art">&#127968;</div>
+            <h4>Studio Tour '97</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE / HYPE BOX -->
+    <section class="window">
+      <div class="window-titlebar">
+        <span>&#9619; HYPE.TXT</span>
+        <span class="controls"><span>_</span><span>X</span></span>
+      </div>
+      <div class="window-body" style="text-align:center;">
+        <h2 class="section-title" style="font-size:22px;">What the Press is Saying</h2>
+        <p class="rainbow" style="font-size:22px;">"THE MOST RAGE-INDUCING GAME OF THE DECADE!"</p>
+        <p style="font-family:'Courier New',monospace;font-size:13px;color:#9a9ad0;">- totallyrealgamingmagazine.com (1997)</p>
+        <p class="rainbow" style="font-size:22px;">"I HAVE NOT STOPPED RAGING SINCE I PLAYED THIS!"</p>
+        <p style="font-family:'Courier New',monospace;font-size:13px;color:#9a9ad0;">- a very real gamer, probably</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 1997 Ragerush Studios. All Rights Reserved. | <a href="index.html">Home</a> | <a href="download.html">Download</a> | <a href="news.html">News</a> | <a href="trailer.html">Trailer</a></p>
+    <p>&#9835; Best experienced at 800x600 with Netscape Navigator 4.0 &#9835;</p>
+  </footer>
+
+  <div class="bottom-marquee">
+    <marquee behavior="scroll" direction="right" scrollamount="6">
+      &#9733; COMING SOON TO A COMPUTER NEAR YOU &#9733; RAGERUSH 1997 &#9733; INSERT COIN &#9733;
+    </marquee>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
