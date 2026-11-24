@@ -211,6 +211,31 @@
     updateActive();
   }
 
+  /* ---------- Light / dark theme toggle ---------- */
+  function initTheme() {
+    var btn = document.getElementById("theme-toggle");
+    if (!btn) return;
+    var root = document.documentElement;
+    var saved = store.get("rr_theme");
+    if (saved === "dark" || saved === "light") root.setAttribute("data-theme", saved);
+
+    function sync() {
+      var dark = root.getAttribute("data-theme") === "dark";
+      btn.textContent = dark ? "☀" : "☾";
+      var label = dark ? "Switch to light mode" : "Switch to dark mode";
+      btn.title = label;
+      btn.setAttribute("aria-label", label);
+    }
+
+    sync();
+    btn.addEventListener("click", function () {
+      var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      store.set("rr_theme", next);
+      sync();
+    });
+  }
+
   /* ---------- Boot ---------- */
   document.addEventListener("DOMContentLoaded", function () {
     initCounter();
@@ -219,5 +244,6 @@
     initDownloads();
     initGuestbook();
     initNav();
+    initTheme();
   });
 })();

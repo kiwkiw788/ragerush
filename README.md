@@ -50,6 +50,7 @@ Everything lives in `index.html` — just scroll. Sticky nav, smooth anchors, no
 
 ## ✨ Features
 
+- 🌙 **Light / dark mode toggle** in the top-right (remembers your choice)
 - 🔵 Classic 2010s blue top bar + white cards with 1px borders and soft shadows
 - ✨ Glossy gradient buttons with inset highlights (Web 2.0 style)
 - 🔤 Helvetica / Arial typography, light gray page background

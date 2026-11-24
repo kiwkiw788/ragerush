@@ -6,6 +6,12 @@
   <title>Ragerush — Home of the Rage</title>
   <meta name="description" content="Ragerush — game studio. Downloads, news and trailers on one tidy page.">
   <link rel="stylesheet" href="css/modern.css">
+  <script>
+    try {
+      var t = localStorage.getItem("rr_theme");
+      if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
 </head>
 <body>
 
@@ -13,12 +19,15 @@
   <div class="topbar">
     <div class="container topbar-inner">
       <a href="#home" class="brand">RAGERUSH</a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">☰</button>
-      <div class="nav-links" id="nav-links">
-        <a href="#home" class="active" data-nav="home">Home</a>
-        <a href="#download" data-nav="download">Download</a>
-        <a href="#news" data-nav="news">News</a>
-        <a href="#trailer" data-nav="trailer">Trailer</a>
+      <div class="topbar-right">
+        <div class="nav-links" id="nav-links">
+          <a href="#home" class="active" data-nav="home">Home</a>
+          <a href="#download" data-nav="download">Download</a>
+          <a href="#news" data-nav="news">News</a>
+          <a href="#trailer" data-nav="trailer">Trailer</a>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" title="Switch to dark mode" aria-label="Switch to dark mode">☾</button>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">☰</button>
       </div>
     </div>
   </div>
@@ -185,7 +194,7 @@
     <div class="container">
       <div class="footer-stats">
         <div class="counter">
-          <span style="font-size:11px;color:#888;">VISITOR #</span>
+          <span style="font-size:11px;color:var(--muted);">VISITOR #</span>
           <span id="visitor-counter">000000</span>
         </div>
         <div class="pill" id="clock"></div>
