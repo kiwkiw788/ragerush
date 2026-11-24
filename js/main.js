@@ -45,68 +45,6 @@
     setInterval(tick, 1000);
   }
 
-  /* ---------- Trailer / fake video player ---------- */
-  function initVideoPlayer() {
-    var player = document.getElementById("video-player");
-    if (!player) return;
-
-    var overlay = player.querySelector(".play-overlay");
-    var sceneText = player.querySelector(".scene-text");
-    var timeEl = document.getElementById("video-time");
-    var progressEl = player.querySelector(".progress-fill");
-    var frames = [
-      "RAGERUSH PRESENTS...",
-      "THE YEAR IS 2026...",
-      "THE ARCADE IS UNDER ATTACK!",
-      "SUIT UP. POWER UP. RAGE ON!",
-      "RAGERUSH - COMING SOON!"
-    ];
-    var frame = 0;
-    var seconds = 0;
-    var timer = null;
-
-    function play() {
-      player.classList.add("playing");
-      seconds = 0;
-      frame = 0;
-      if (sceneText) sceneText.textContent = frames[0];
-      timer = setInterval(function () {
-        seconds += 1;
-        frame = Math.floor(seconds / 4) % frames.length;
-        if (sceneText) sceneText.textContent = frames[frame];
-        var mm = String(Math.floor(seconds / 60)).padStart(2, "0");
-        var ss = String(seconds % 60).padStart(2, "0");
-        if (timeEl) timeEl.textContent = mm + ":" + ss + " / 00:45";
-        if (progressEl) progressEl.style.width = Math.min((seconds / 45) * 100, 100) + "%";
-        if (seconds >= 45) stop();
-      }, 1000);
-    }
-
-    function stop() {
-      clearInterval(timer);
-      player.classList.remove("playing");
-      if (timeEl) timeEl.textContent = "00:00 / 00:45";
-      if (progressEl) progressEl.style.width = "0%";
-    }
-
-    function toggle() {
-      if (player.classList.contains("playing")) stop();
-      else play();
-    }
-
-    if (overlay) overlay.addEventListener("click", toggle);
-    var stopBtn = document.getElementById("stop-btn");
-    if (stopBtn) stopBtn.addEventListener("click", stop);
-
-    /* Thumbnails change the scene text and scroll up to the player */
-    document.querySelectorAll(".thumb[data-title]").forEach(function (thumb) {
-      thumb.addEventListener("click", function () {
-        if (sceneText) sceneText.textContent = thumb.getAttribute("data-title");
-        window.scrollTo({ top: player.getBoundingClientRect().top + window.scrollY - 90, behavior: "smooth" });
-      });
-    });
-  }
-
   /* ---------- Download page: progress bar / simulated download ---------- */
   function initDownloads() {
     var buttons = document.querySelectorAll("[data-target]");
@@ -240,7 +178,6 @@
   document.addEventListener("DOMContentLoaded", function () {
     initCounter();
     initClock();
-    initVideoPlayer();
     initDownloads();
     initGuestbook();
     initNav();

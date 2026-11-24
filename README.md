@@ -38,12 +38,11 @@ Everything lives in `index.html` — just scroll. Sticky nav, smooth anchors, no
 | 🏠 Home | Ragerush logo, featured game "Chrome Rage '26", CSS game banner |
 | ⬇️ Download | Shareware demos + simulated dial-up progress bars |
 | 📰 News | Studio announcements in a compact list |
-| 🎬 Trailer | In-browser player with animated scene text + thumbnails |
 
 > Design: clean **2010s-era web** — light gray background, white cards with
 > soft shadows, blue glossy buttons, Helvetica type, classic blue top bar.
 > The original garish 4-page 90s edition is still in the repo as
-> `download.html`, `news.html`, `trailer.html` and `css/style.css` — kept as
+> `download.html`, `news.html` and `css/style.css` — kept as
 > a nostalgic archive.
 
 ---
@@ -57,7 +56,6 @@ Everything lives in `index.html` — just scroll. Sticky nav, smooth anchors, no
 - 🪟 Smooth-scroll sticky nav with active-section highlight + mobile menu
 - 🖼️ CSS game banner (blue sky, hills, bobbing robot)
 - 🔢 Visitor counter + live clock in the footer
-- ▶️ In-browser **trailer player** with animated scene text
 - 💾 Simulated dial-up download progress bars
 - 📱 Fully responsive
 - 🚫 No guestbook, no "Why Ragerush" section — kept deliberately tidy
@@ -76,7 +74,6 @@ Everything lives in `index.html` — just scroll. Sticky nav, smooth anchors, no
 │   └── main.js         # Counter, clock, player, downloads, guestbook, nav
 ├── download.html       # Legacy 90s pages (archive)
 ├── news.html           # Legacy 90s pages (archive)
-├── trailer.html        # Legacy 90s pages (archive)
 ├── .nojekyll           # Disables Jekyll processing on GitHub Pages
 └── README.md           # You are here
 ```

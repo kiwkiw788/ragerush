@@ -41,20 +41,7 @@
   --note-border: #f0dda6;
   --note-text: #8a6b26;
 
-  --bar-top: #ffffff;
-  --bar-bottom: #eef2f8;
-  --ctrl-top: #ffffff;
-  --ctrl-bottom: #e8edf5;
-  --ctrl-border: #c3ccdd;
-  --ctrl-text: #444d61;
-
-  --thumb-art-top: #cfe0f8;
-  --thumb-art-bottom: #9db8e6;
-  --thumb-shade: rgba(12,22,44,.45);
-
   --footer-bg: linear-gradient(180deg, rgba(255,255,255,.75), rgba(227,234,245,.75));
-  --frame-top: #8fa1bf;
-  --frame-bottom: #2b3550;
 
   --radius: 5px;
   --max: 960px;
@@ -95,20 +82,7 @@
   --note-border: #4a4226;
   --note-text: #d8c98a;
 
-  --bar-top: #273044;
-  --bar-bottom: #1d2533;
-  --ctrl-top: #2d374a;
-  --ctrl-bottom: #232c3c;
-  --ctrl-border: #3e4a60;
-  --ctrl-text: #cdd6e4;
-
-  --thumb-art-top: #2d3a52;
-  --thumb-art-bottom: #1a2231;
-  --thumb-shade: rgba(0,0,0,.6);
-
   --footer-bg: rgba(0,0,0,.28);
-  --frame-top: #3b4861;
-  --frame-bottom: #0d1219;
 }
 
 * { box-sizing: border-box; }
@@ -390,77 +364,6 @@ section { scroll-margin-top: 70px; }
 .news-item h3 { margin: 0 0 4px; font-size: 14px; }
 .news-item p { margin: 0; color: var(--muted); }
 @media (max-width: 560px) { .news-item { grid-template-columns: 1fr; gap: 5px; } }
-
-/* ---------- player ---------- */
-.player-shell {
-  padding: 3px; border-radius: 8px;
-  background: linear-gradient(135deg, var(--frame-top), var(--frame-bottom));
-  box-shadow: 0 5px 14px rgba(20,32,60,.3), inset 0 1px 0 rgba(255,255,255,.35);
-}
-.player {
-  position: relative; aspect-ratio: 16 / 9;
-  background: #0b0b12; border: 1px solid #000; border-radius: 5px;
-  overflow: hidden; box-shadow: inset 0 0 34px #000;
-}
-.player-scene {
-  position: absolute; inset: 0;
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  text-align: center; padding: 0 16px;
-  background: radial-gradient(circle at 50% 55%, #324a91, #0a1024 72%);
-}
-.player-scene .star { font-size: 54px; color: #ffe066; animation: spin 8s linear infinite; text-shadow: 0 0 18px rgba(255,224,102,.6); }
-.player-scene .txt { margin-top: 10px; color: #fff; font-size: clamp(18px, 3.6vw, 30px); font-weight: 900; text-shadow: 0 2px 5px #000; }
-@keyframes spin { to { transform: rotate(360deg); } }
-.play-overlay {
-  position: absolute; inset: 0; z-index: 3;
-  display: flex; align-items: center; justify-content: center;
-  background: rgba(0,0,0,.32); cursor: pointer;
-}
-.play-circle {
-  width: 68px; height: 68px; border-radius: 50%;
-  background: linear-gradient(#ffb347, var(--accent) 60%, #d97600);
-  border: 3px solid #fff;
-  box-shadow: 0 4px 14px rgba(0,0,0,.55), inset 0 2px 0 rgba(255,255,255,.45);
-  display: flex; align-items: center; justify-content: center;
-  color: #fff; font-size: 26px; padding-left: 4px;
-  transition: transform .15s;
-}
-.play-overlay:hover .play-circle { transform: scale(1.1); }
-.player.playing .play-overlay { display: none; }
-.player.playing .star { animation-duration: 1.8s; }
-.player-bar {
-  display: flex; align-items: center; gap: 10px; margin-top: 10px;
-  padding: 8px 11px;
-  background: linear-gradient(var(--bar-top), var(--bar-bottom));
-  border: 1px solid var(--border); border-radius: 5px;
-  color: var(--muted); font-size: 11px; font-family: "Courier New", monospace;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.6);
-}
-.player-bar .ctrl {
-  background: linear-gradient(var(--ctrl-top), var(--ctrl-bottom));
-  border: 1px solid var(--ctrl-border); border-radius: 4px;
-  padding: 4px 10px; color: #c4433a; font-weight: bold; font-size: 11px;
-  cursor: pointer; box-shadow: 0 1px 2px rgba(0,0,0,.1);
-}
-.player-bar .time { margin-left: auto; color: var(--good); font-weight: bold; }
-.thumbs { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin-top: 14px; }
-.thumb {
-  background: var(--card); border: 1px solid var(--border);
-  border-radius: 5px; padding: 9px; text-align: center; cursor: pointer;
-  transition: transform .15s, box-shadow .15s, border-color .15s;
-}
-.thumb:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: 0 4px 10px rgba(25,40,75,.18); }
-.thumb-art {
-  position: relative; height: 64px; border-radius: 3px; margin-bottom: 7px;
-  display: flex; align-items: center; justify-content: center; font-size: 28px;
-  background: linear-gradient(var(--thumb-art-top), var(--thumb-art-bottom));
-  overflow: hidden;
-}
-.thumb-art::after {
-  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 45%;
-  background: linear-gradient(transparent, var(--thumb-shade));
-}
-.thumb h4 { margin: 0; font-size: 12px; color: var(--link); }
 
 /* ---------- footer ---------- */
 .footer {
