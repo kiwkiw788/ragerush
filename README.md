@@ -7,10 +7,10 @@
 # ██║  ██║██║  ██║██║  ██║╚██████╔╝███████╗███████║██║     
 # ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝╚═╝     
 
-**~ Home of the Rage ~ Est. 1997 ~**
+**~ Home of the Rage ~ Est. 2026 ~**
 
 [![Live Site](https://img.shields.io/badge/LIVE-SITE-ff2ec4?style=for-the-badge)](https://kiwkiw788.github.io/ragerush/)
-[![Made in 1997](https://img.shields.io/badge/Made%20in-1997-6600cc?style=for-the-badge)](https://github.com/)
+[![Made in 2026](https://img.shields.io/badge/Made%20in-2026-6600cc?style=for-the-badge)](https://github.com/)
 [![Powered by](https://img.shields.io/badge/Powered%20by-Netscape%204-00ffff?style=for-the-badge)](https://github.com/)
 [![Rage Level](https://img.shields.io/badge/Rage-MAXIMUM-ffff00?style=for-the-badge)](https://github.com/)
 
@@ -35,7 +35,7 @@ Everything lives in `index.html` — just scroll. Sticky nav, smooth anchors, no
 
 | Section | What's inside |
 |---------|---------------|
-| 🏠 Home | Ragerush logo, featured game "Chrome Rage '97", CSS game banner |
+| 🏠 Home | Ragerush logo, featured game "Chrome Rage '26", CSS game banner |
 | ⬇️ Download | Shareware demos + simulated dial-up progress bars |
 | 📰 News | Studio announcements in a compact list |
 | 🎬 Trailer | In-browser player with animated scene text + thumbnails |
@@ -51,7 +51,7 @@ Everything lives in `index.html` — just scroll. Sticky nav, smooth anchors, no
 ## ✨ Features
 
 - 🌙 **Light / dark mode toggle** in the top-right (remembers your choice)
-- 🔵 Classic 2010s blue top bar + white cards with 1px borders and soft shadows
+- 🟠 Lively 2010s look: blue top bar with orange accent, glossy blue/green/orange buttons, orange "FEATURED GAME" ribbon, gradient game-title banner, colored file icons, date pills and a framed video player
 - ✨ Glossy gradient buttons with inset highlights (Web 2.0 style)
 - 🔤 Helvetica / Arial typography, light gray page background
 - 🪟 Smooth-scroll sticky nav with active-section highlight + mobile menu
@@ -113,7 +113,7 @@ Then visit `http://localhost:8000`.
 ## 📝 Notes
 
 - This is a **novelty / nostalgia project**. The downloads are simulated and
-  no real game files are distributed. "Chrome Rage '97" is fictional.
+  no real game files are distributed. "Chrome Rage '26" is fictional.
 - `localStorage` is used for the visitor counter. If the browser blocks it
   (e.g. inside an iframe), the site still works — storage calls are safely wrapped.
 - Best experienced at 1024×768 with the speakers up. 🔊
@@ -131,6 +131,6 @@ GitHub Pages เพื่อแชร์ลิงก์ให้เพื่อ�
 
 <div align="center">
 
-Made with ❤️, lots of 💛, and an unreasonable amount of 🧃 in 1997.
+Made with ❤️, lots of 💛, and an unreasonable amount of 🧃 in 2026.
 
 </div>

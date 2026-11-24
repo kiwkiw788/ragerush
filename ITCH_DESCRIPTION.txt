@@ -1,0 +1,35 @@
+PASTE THIS INTO YOUR ITCH.IO PROJECT DESCRIPTION
+==================================================
+
+Welcome to RAGERUSH — the official home of the loudest, fastest, most
+rage-inducing game studio on the World Wide Web (est. 2026)!
+
+This is a love letter to the 90s internet: neon colors, scrolling marquees,
+blinking "NEW!" badges, beveled buttons, a dial-up-style download center,
+a chiptune trailer player, a press archive, and a guestbook. Explore the
+whole site using the navigation bar at the top.
+
+PAGES:
+  * HOME     - Meet the studio and check out "Chrome Rage '26"
+  * DOWNLOAD - Shareware demos, mirrors, and system requirements
+  * NEWS     - Press releases and studio updates
+  * TRAILER  - Watch the fake in-browser trailer player
+  * GUESTBOOK - Sign it on the home page!
+
+NOTE: This is a nostalgic novelty website. The downloads are simulated and
+no real game files are distributed. Best experienced at 800x600 in
+Netscape Navigator 4.0 with the volume turned all the way up.
+
+RAGE ON! \m/
+
+SUGGESTED TAGS FOR ITCH.IO
+==================================================
+retro, 90s, nostalgia, web, experimental, interactive,
+pixel, chiptune, fake-game, joke, website, surreal
+
+SUGGESTED PROJECT SETTINGS
+==================================================
+Title:        Ragerush - The 90s Game Studio Website
+Kind:         Other > Website  (or "Game" if "Website" is unavailable)
+Genre:        Other / Interactive Fiction
+Title format: Choose whatever you like

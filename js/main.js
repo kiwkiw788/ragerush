@@ -56,7 +56,7 @@
     var progressEl = player.querySelector(".progress-fill");
     var frames = [
       "RAGERUSH PRESENTS...",
-      "THE YEAR IS 1997...",
+      "THE YEAR IS 2026...",
       "THE ARCADE IS UNDER ATTACK!",
       "SUIT UP. POWER UP. RAGE ON!",
       "RAGERUSH - COMING SOON!"
@@ -126,7 +126,7 @@
           if (pct >= 100) {
             pct = 100;
             clearInterval(iv);
-            if (status) status.textContent = "DOWNLOAD COMPLETE! (just kidding - it's 1997, dial-up!)";
+            if (status) status.textContent = "DOWNLOAD COMPLETE! (just kidding - it's all simulated!)";
           } else {
             if (status) status.textContent = "DOWNLOADING... " + pct + "%";
           }
