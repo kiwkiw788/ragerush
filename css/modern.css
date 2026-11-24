@@ -140,26 +140,11 @@ section { scroll-margin-top: 66px; }
 .btn:active { box-shadow: inset 0 2px 3px rgba(0,0,0,0.3); }
 .btn-green { border-color: #3c7a1e; background: linear-gradient(#7bc954, var(--green)); }
 .btn-green:hover { background: linear-gradient(#86d45f, #58aa31); }
-.btn-gray {
-  border-color: #b8bec9;
-  background: linear-gradient(#fff, #e8ebf1);
-  color: #555;
-  text-shadow: 0 1px 0 #fff;
-}
-.btn-gray:hover { background: linear-gradient(#fff, #dfe3eb); color: #333; }
 
 /* ---------- hero ---------- */
 .hero { padding: 26px 0 12px; }
 .hero-card { padding: 30px 28px 26px; }
-.hero-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 12px;
-  margin-bottom: 6px;
-}
-.share { display: flex; gap: 6px; }
-.share .btn { font-size: 11px; padding: 4px 9px; }
+.hero-top { margin-bottom: 6px; }
 .hero-logo {
   margin: 4px 0 2px;
   color: var(--blue);
