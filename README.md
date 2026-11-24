@@ -29,30 +29,37 @@ Open it here: **https://kiwkiw788.github.io/ragerush/**
 
 ---
 
-## 📄 Pages
+## 📄 One Page, Everything Inside
 
-| Page | File | What's inside |
-|------|------|---------------|
-| 🏠 Home | `index.html` | Featured game "Chrome Rage '97", site stats, guestbook, under-construction banner |
-| ⬇️ Download | `download.html` | Shareware demos, simulated progress bars, download mirrors, system requirements |
-| 📰 News | `news.html` | Press releases, studio announcements, news archive, mailing list |
-| 🎬 Trailer | `trailer.html` | Fake Windows Media-style player, animated scene text, more trailers |
+Everything lives in `index.html` — just scroll. Sticky nav, smooth anchors, no clutter.
+
+| Section | What's inside |
+|---------|---------------|
+| 🏠 Home | Ragerush logo, featured game "Chrome Rage '97", CSS game banner |
+| ⬇️ Download | Shareware demos + simulated dial-up progress bars |
+| 📰 News | Studio announcements in a compact list |
+| 🎬 Trailer | In-browser player with animated scene text + thumbnails |
+
+> Design: clean **2010s-era web** — light gray background, white cards with
+> soft shadows, blue glossy buttons, Helvetica type, classic blue top bar.
+> The original garish 4-page 90s edition is still in the repo as
+> `download.html`, `news.html`, `trailer.html` and `css/style.css` — kept as
+> a nostalgic archive.
 
 ---
 
-## ✨ 90s Features
+## ✨ Features
 
-- 🌌 Tiled **starfield background** with neon colors
-- 📢 Scrolling `<marquee>` banners (top and bottom)
-- 💚 Blinking **"NEW!"** badges + rainbow gradient headlines
-- 🔲 Beveled 3D buttons that depress when clicked
-- 🪟 Fake window chrome with `_ □ X` title-bar controls
-- 👻 CSS pixel-art hero scene (sun, mountains, grid floor, bobbing bot)
-- 🔢 Visitor counter + live clock
-- 🏅 "Best viewed in Netscape Navigator" badges
-- 📖 Interactive **guestbook** (saved in `localStorage`)
-- ▶️ In-browser **trailer player** with chiptune-style scene changes
+- 🔵 Classic 2010s blue top bar + white cards with 1px borders and soft shadows
+- ✨ Glossy gradient buttons with inset highlights (Web 2.0 style)
+- 🔤 Helvetica / Arial typography, light gray page background
+- 🪟 Smooth-scroll sticky nav with active-section highlight + mobile menu
+- 🖼️ CSS game banner (blue sky, hills, bobbing robot)
+- 🔢 Visitor counter + live clock in the footer
+- ▶️ In-browser **trailer player** with animated scene text
 - 💾 Simulated dial-up download progress bars
+- 📱 Fully responsive
+- 🚫 No guestbook, no "Why Ragerush" section — kept deliberately tidy
 
 ---
 
@@ -60,14 +67,15 @@ Open it here: **https://kiwkiw788.github.io/ragerush/**
 
 ```
 .
-├── index.html          # Home page
-├── download.html       # Download page
-├── news.html           # News page
-├── trailer.html        # Trailer page
+├── index.html          # The single-page site (LIVE version)
 ├── css/
-│   └── style.css       # All 90s styling & animations
+│   ├── modern.css      # Clean 2010s-era single-page styling
+│   └── style.css       # Original 90s multi-page styling (archive)
 ├── js/
-│   └── main.js         # Counter, clock, player, downloads, guestbook
+│   └── main.js         # Counter, clock, player, downloads, guestbook, nav
+├── download.html       # Legacy 90s pages (archive)
+├── news.html           # Legacy 90s pages (archive)
+├── trailer.html        # Legacy 90s pages (archive)
 ├── .nojekyll           # Disables Jekyll processing on GitHub Pages
 └── README.md           # You are here
 ```
@@ -105,16 +113,16 @@ Then visit `http://localhost:8000`.
 
 - This is a **novelty / nostalgia project**. The downloads are simulated and
   no real game files are distributed. "Chrome Rage '97" is fictional.
-- `localStorage` is used for the visitor counter and guestbook. If the browser
-  blocks it (e.g. inside an iframe), the site still works — storage calls are
-  safely wrapped.
-- Best experienced at 800×600 in Netscape Navigator 4.0 with the speakers up. 🔊
+- `localStorage` is used for the visitor counter. If the browser blocks it
+  (e.g. inside an iframe), the site still works — storage calls are safely wrapped.
+- Best experienced at 1024×768 with the speakers up. 🔊
 
 ---
 
 ## Thailand / ภาษาไทย 🇹🇭
 
-เว็บจำลองสไตล์ยุค 90 ของสตูดิโอเกมสมมติ **Ragerush** ทำด้วย HTML/CSS/JS ล้วน ๆ
+เว็บหน้าเดียวของสตูดิโอเกมสมมติ **Ragerush** โทนยุค 2010 (การ์ดขาว ปุ่มน้ำเงินเงา ๆ)
+ทำด้วย HTML/CSS/JS ล้วน ๆ
 ไม่มี dependencies ไม่ต้อง build เปิด `index.html` ได้เลย หรืออัปโหลดขึ้น
 GitHub Pages เพื่อแชร์ลิงก์ให้เพื่อนดูได้ฟรี
 

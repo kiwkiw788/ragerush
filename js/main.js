@@ -53,7 +53,7 @@
     var overlay = player.querySelector(".play-overlay");
     var sceneText = player.querySelector(".scene-text");
     var timeEl = document.getElementById("video-time");
-    var progressEl = document.querySelector(".progress-fill");
+    var progressEl = player.querySelector(".progress-fill");
     var frames = [
       "RAGERUSH PRESENTS...",
       "THE YEAR IS 1997...",
@@ -97,11 +97,19 @@
     if (overlay) overlay.addEventListener("click", toggle);
     var stopBtn = document.getElementById("stop-btn");
     if (stopBtn) stopBtn.addEventListener("click", stop);
+
+    /* Thumbnails change the scene text and scroll up to the player */
+    document.querySelectorAll(".thumb[data-title]").forEach(function (thumb) {
+      thumb.addEventListener("click", function () {
+        if (sceneText) sceneText.textContent = thumb.getAttribute("data-title");
+        window.scrollTo({ top: player.getBoundingClientRect().top + window.scrollY - 90, behavior: "smooth" });
+      });
+    });
   }
 
   /* ---------- Download page: progress bar / simulated download ---------- */
   function initDownloads() {
-    var buttons = document.querySelectorAll(".dl-btn");
+    var buttons = document.querySelectorAll("[data-target]");
     if (!buttons.length) return;
     buttons.forEach(function (btn) {
       btn.addEventListener("click", function (e) {
@@ -172,6 +180,37 @@
     render();
   }
 
+  /* ---------- Single-page nav: mobile menu + scroll spy ---------- */
+  function initNav() {
+    var toggle = document.getElementById("nav-toggle");
+    var links = document.getElementById("nav-links");
+    if (toggle && links) {
+      toggle.addEventListener("click", function () {
+        links.classList.toggle("open");
+      });
+      links.addEventListener("click", function (e) {
+        if (e.target.tagName === "A") links.classList.remove("open");
+      });
+    }
+
+    var navLinks = document.querySelectorAll("[data-nav]");
+    var sections = document.querySelectorAll("section[id]");
+    if (!navLinks.length || !sections.length) return;
+
+    function updateActive() {
+      var pos = window.scrollY + 140;
+      var current = "";
+      sections.forEach(function (sec) {
+        if (sec.offsetTop <= pos) current = sec.id;
+      });
+      navLinks.forEach(function (a) {
+        a.classList.toggle("active", a.getAttribute("data-nav") === current);
+      });
+    }
+    window.addEventListener("scroll", updateActive, { passive: true });
+    updateActive();
+  }
+
   /* ---------- Boot ---------- */
   document.addEventListener("DOMContentLoaded", function () {
     initCounter();
@@ -179,5 +218,6 @@
     initVideoPlayer();
     initDownloads();
     initGuestbook();
+    initNav();
   });
 })();
