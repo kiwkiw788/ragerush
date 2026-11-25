@@ -231,61 +231,13 @@ section { scroll-margin-top: 70px; }
 .hero-desc { max-width: 640px; margin: 0 0 18px; color: var(--muted); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 9px; }
 
-/* ---------- game banner ---------- */
+/* ---------- site banner ---------- */
 .banner {
-  position: relative; height: 240px; margin-top: 24px;
+  margin-top: 24px;
   border: 1px solid var(--border); border-radius: var(--radius);
-  overflow: hidden;
-  background: linear-gradient(#6fbdec 0%, #a9d8f5 52%, #e4f3fc 100%);
+  overflow: hidden; background: #111;
 }
-.banner::before {
-  content: ""; position: absolute; inset: 0;
-  background: radial-gradient(300px 120px at 78% 22%, rgba(255,235,150,.5), transparent 70%);
-}
-.banner .cloud { position: absolute; background: rgba(255,255,255,.9); border-radius: 40px; height: 16px; box-shadow: 0 3px 6px rgba(90,140,190,.15); }
-.banner .c1 { width: 76px; top: 62px; left: 9%; }
-.banner .c2 { width: 110px; top: 96px; right: 12%; }
-.banner .sun {
-  position: absolute; right: 15%; top: 26px;
-  width: 56px; height: 56px; border-radius: 50%;
-  background: #ffe066; box-shadow: 0 0 34px 10px rgba(255,214,80,.55);
-}
-.banner .hill {
-  position: absolute; bottom: 22px; width: 0; height: 0;
-  border-left: 150px solid transparent; border-right: 150px solid transparent;
-  border-bottom: 120px solid #5da945;
-}
-.banner .h1 { left: -2%; border-bottom-color: #4e9639; }
-.banner .h2 { left: 30%; border-bottom-color: #6cbb52; }
-.banner .h3 { left: 66%; border-bottom-color: #4e9639; }
-.banner .ground {
-  position: absolute; bottom: 0; left: 0; right: 0; height: 24px;
-  background: linear-gradient(#3f8c31, #2e6b23);
-  border-top: 2px solid #86cf63;
-}
-.banner .bot {
-  position: absolute; bottom: 18px; left: 50%;
-  transform: translateX(-50%); font-size: 62px; line-height: 1;
-  filter: drop-shadow(0 3px 3px rgba(0,0,0,.3));
-  animation: bob 2.6s ease-in-out infinite;
-}
-.banner-title {
-  position: absolute; top: 16px; left: 22px;
-  font-size: clamp(22px, 4vw, 38px); font-weight: 900;
-  font-style: italic; letter-spacing: -1px; line-height: .95;
-  background: linear-gradient(#ffd24a, #ff9500 60%, #e06a00);
-  -webkit-background-clip: text; background-clip: text;
-  -webkit-text-fill-color: transparent; color: #ff9500;
-  filter: drop-shadow(2px 2px 0 #5b2a00) drop-shadow(0 3px 5px rgba(0,0,0,.3));
-  transform: rotate(-3deg);
-}
-.banner-title span { font-size: .6em; display: block; text-align: right; }
-.banner-caption {
-  position: absolute; left: 10px; bottom: 8px;
-  background: rgba(0,0,0,.62); color: #fff;
-  font-size: 10px; padding: 3px 8px; border-radius: 3px;
-}
-@keyframes bob { 0%,100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(-9px); } }
+.banner img { display: block; width: 100%; height: auto; }
 
 /* ---------- sections ---------- */
 .section { padding: 28px 0; }

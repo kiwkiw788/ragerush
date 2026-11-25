@@ -35,7 +35,7 @@ Everything lives in `index.html` — just scroll. Sticky nav, smooth anchors, no
 
 | Section | What's inside |
 |---------|---------------|
-| 🏠 Home | Ragerush logo, featured game "Chrome Rage '26", CSS game banner |
+| 🏠 Home | Ragerush logo, featured game "Chrome Rage '26", RageRush image banner |
 | ⬇️ Download | Shareware demos + simulated dial-up progress bars |
 | 📰 News | Studio announcements in a compact list |
 
@@ -50,11 +50,11 @@ Everything lives in `index.html` — just scroll. Sticky nav, smooth anchors, no
 ## ✨ Features
 
 - 🌙 **Light / dark mode toggle** in the top-right (remembers your choice)
-- 🟠 Lively 2010s look: blue top bar with orange accent, glossy blue/green/orange buttons, orange "FEATURED GAME" ribbon, gradient game-title banner, colored file icons, date pills and a framed video player
+- 🟠 Lively 2010s look: blue top bar with orange accent, glossy blue/green/orange buttons, orange "NEW BANNER" ribbon, colored file icons and date pills
 - ✨ Glossy gradient buttons with inset highlights (Web 2.0 style)
 - 🔤 Helvetica / Arial typography, light gray page background
 - 🪟 Smooth-scroll sticky nav with active-section highlight + mobile menu
-- 🖼️ CSS game banner (blue sky, hills, bobbing robot)
+- 🖼️ RageRush image banner (`ragerush-banner.jfif`)
 - 🔢 Visitor counter + live clock in the footer
 - 💾 Simulated dial-up download progress bars
 - 📱 Fully responsive
@@ -71,9 +71,10 @@ Everything lives in `index.html` — just scroll. Sticky nav, smooth anchors, no
 │   ├── modern.css      # Clean 2010s-era single-page styling
 │   └── style.css       # Original 90s multi-page styling (archive)
 ├── js/
-│   └── main.js         # Counter, clock, player, downloads, guestbook, nav
+│   └── main.js         # Counter, clock, downloads, guestbook, nav
 ├── download.html       # Legacy 90s pages (archive)
 ├── news.html           # Legacy 90s pages (archive)
+├── ragerush-banner.jfif # Site banner image
 ├── .nojekyll           # Disables Jekyll processing on GitHub Pages
 └── README.md           # You are here
 ```
