@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffd9e4">
+  <meta name="description" content="จดหมายน่ารัก ๆ สำหรับคนพิเศษ">
+  <title>จดหมายสำหรับคุณ 💌</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- พื้นหลังหัวใจลอย ๆ -->
+  <div class="sky" id="sky" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="brand"><span aria-hidden="true">💌</span> จดหมายสำหรับคุณ</div>
+    <button class="icon-btn" id="soundToggle" type="button" aria-label="เปิด/ปิดเสียง" aria-pressed="true">🔊</button>
+  </header>
+
+  <main>
+    <!-- ฉากเคาะซองจดหมาย -->
+    <section class="stage" id="stage">
+      <p class="eyebrow">มีอะไรให้คุณคนเดียว...</p>
+      <h1>สวัสดีที่รัก <span class="wave" aria-hidden="true">👋</span></h1>
+      <p class="lead" id="lead">เคาะซองจดหมาย <strong>3 ครั้ง</strong> นะ<br>แล้วจะมีอะไรน่ารัก ๆ ให้ดู 💗</p>
+
+      <div class="envelope-wrap">
+        <button class="envelope" id="envelope" type="button"
+                aria-label="เคาะซองจดหมายเพื่อเปิด">
+          <span class="env-back" aria-hidden="true"></span>
+
+          <span class="env-letter" aria-hidden="true">
+            <span class="letter-to">To: <b id="letterTo">ที่รัก</b></span>
+            <span class="letter-lines"><i></i><i></i><i></i></span>
+            <span class="letter-heart">♥</span>
+          </span>
+
+          <span class="env-side env-side-left" aria-hidden="true"></span>
+          <span class="env-side env-side-right" aria-hidden="true"></span>
+          <span class="env-pocket" aria-hidden="true"></span>
+          <span class="env-flap" aria-hidden="true"></span>
+          <span class="env-seal" aria-hidden="true">♥</span>
+        </button>
+        <p class="tap-hint" id="tapHint">แตะที่ซอง ∼ 3 ครั้ง</p>
+      </div>
+
+      <div class="progress" id="progress" role="img" aria-label="เคาะไปแล้ว 0 จาก 3 ครั้ง">
+        <span>♥</span><span>♥</span><span>♥</span>
+      </div>
+    </section>
+
+    <!-- ฉากจดหมาย -->
+    <section class="letter-layer" id="letterLayer" hidden>
+      <div class="paper" id="paper" role="dialog" aria-modal="true" aria-label="จดหมายบอกรัก">
+        <span class="tape tape-left" aria-hidden="true"></span>
+        <span class="tape tape-right" aria-hidden="true"></span>
+        <span class="paper-doodle doodle-1" aria-hidden="true">✿</span>
+        <span class="paper-doodle doodle-2" aria-hidden="true">♡</span>
+        <span class="paper-doodle doodle-3" aria-hidden="true">✦</span>
+
+        <p class="paper-head">Dear you,</p>
+        <div class="paper-body" id="paperBody"></div>
+        <p class="paper-sign" id="paperSign"></p>
+
+        <div class="paper-actions">
+          <button class="btn btn-primary" id="hugBtn" type="button">รับกอด 🤗</button>
+          <button class="btn btn-ghost" id="replayBtn" type="button">เปิดอีกครั้ง ↺</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"> made with <span aria-hidden="true">♥</span> สำหรับคุณคนเดียว </footer>
+
+  <div class="hearts-layer" id="heartsLayer" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
